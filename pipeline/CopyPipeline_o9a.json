@@ -20,7 +20,7 @@
 					},
 					{
 						"name": "Destination",
-						"value": "output//empout.txt"
+						"value": "output//empoutfile.txt"
 					}
 				],
 				"typeProperties": {
