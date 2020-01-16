@@ -1,0 +1,38 @@
+{
+	"name": "SourceDataset_o9a",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageIn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "empin.txt",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Initial",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
